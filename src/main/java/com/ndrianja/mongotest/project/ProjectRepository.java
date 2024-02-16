@@ -1,4 +1,6 @@
 package com.ndrianja.mongotest.project;
 
-public interface ProjectRepository {
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ProjectRepository extends MongoRepository<Project,String> {
 }
