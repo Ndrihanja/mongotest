@@ -1,11 +1,10 @@
 package com.ndrianja.mongotest.project;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-@NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ProjectService {
+    private final ProjectRepository projectRepository;
 }

@@ -1,11 +1,11 @@
 package com.ndrianja.mongotest.task;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
-@NoArgsConstructor
+@RequiredArgsConstructor
 public class TaskService {
+
+    private final TaskRepository taskRepository;
 }
