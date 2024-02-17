@@ -5,6 +5,9 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class UserService {
@@ -24,6 +27,17 @@ public class UserService {
                 .lastname(user_data.getLastname())
                 .build();
 
+    }
+
+    public List<User> findAll() {
+        List<User> list = userRepository.findAll();
+        List<User> listDTO = new ArrayList<>();
+
+        for (User u : list) {
+            listDTO.add(new User(u.getId(), u.getFirstname(), u.getLastname(), u.getEmail(), u.getPassword()));
+        }
+
+        return listDTO;
     }
 
 }
