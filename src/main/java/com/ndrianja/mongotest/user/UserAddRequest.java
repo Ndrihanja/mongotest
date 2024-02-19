@@ -1,21 +1,18 @@
 package com.ndrianja.mongotest.user;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.NoArgsConstructor;
 
-@Document(collection = "users")
 @Data
 @Builder
-public class User {
-    @Id
-    private String id;
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserAddRequest {
+
     private String firstname;
     private String lastname;
     private String email;
     private String password;
-
-
-
 }
