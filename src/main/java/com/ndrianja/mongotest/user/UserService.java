@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -37,6 +38,10 @@ public class UserService {
         }
 
         return listDTO;
+    }
+
+    public Optional<User> findUserById(String userId) {
+        return userRepository.findById(userId);
     }
 
 }
