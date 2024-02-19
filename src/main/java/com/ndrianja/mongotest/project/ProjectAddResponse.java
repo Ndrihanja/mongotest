@@ -15,5 +15,7 @@ public class ProjectAddResponse {
     private String name;
     @JsonProperty("description")
     private String description;
+    @JsonProperty("status")
+    private Status status;
 
 }

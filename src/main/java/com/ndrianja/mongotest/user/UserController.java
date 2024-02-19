@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/user")
@@ -24,6 +25,8 @@ public class UserController {
     public ResponseEntity<List<User>> findAll() {
         return ResponseEntity.ok().body(userService.findAll());
     }
+    @GetMapping("/{userId}")
+    public ResponseEntity<Optional<User>> getUserById(@PathVariable String userId) {return ResponseEntity.ok().body(userService.findUserById(userId));}
 
     //@PostMapping("/create")
     //    public UserResponse addUser(@RequestBody SignupRequest signupRequest) {

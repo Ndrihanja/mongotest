@@ -19,8 +19,6 @@ public class ProjectAddByMemberRequest {
 
     private String name;
     private String description;
-    private Status status;
-    private Optional<User> createdByUsersId;
-    private List<Team> collaboratingTeams;
+    private User createdByUsersId;
     private List<User> collaboratingMembers;
 }

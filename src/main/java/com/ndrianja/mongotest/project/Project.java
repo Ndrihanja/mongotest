@@ -21,9 +21,9 @@ public class Project {
     private String description;
     private Status status;
     @DocumentReference(collection = "users")
-    private Optional<User> createdByUsersId;
+    private User createdByUsersId;
     @DocumentReference(collection = "teams")
-    private Optional<Team> createdByTeamId;
+    private Team createdByTeamId;
     @DocumentReference(collection = "teams")
     private List<Team> collaboratingTeams;
     @DocumentReference(collection = "users")

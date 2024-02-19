@@ -20,7 +20,7 @@ public class ProjectAddByTeamRequest {
     private String name;
     private String description;
     private Status status;
-    private Optional<Team> createdByTeamId;
+    private Team createdByTeamId;
     private List<Team> collaboratingTeams;
     private List<User> collaboratingMembers;
 }
