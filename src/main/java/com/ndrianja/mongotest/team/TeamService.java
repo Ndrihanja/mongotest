@@ -1,6 +1,5 @@
 package com.ndrianja.mongotest.team;
 
-import com.ndrianja.mongotest.user.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

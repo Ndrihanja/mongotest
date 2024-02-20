@@ -1,5 +1,9 @@
-package com.ndrianja.mongotest.user;
+package com.ndrianja.mongotest.user.controller;
 
+import com.ndrianja.mongotest.user.model.User;
+import com.ndrianja.mongotest.user.model.UserAddRequest;
+import com.ndrianja.mongotest.user.model.UserAddResponse;
+import com.ndrianja.mongotest.user.service.UserService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

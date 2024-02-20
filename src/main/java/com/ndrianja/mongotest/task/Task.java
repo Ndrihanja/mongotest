@@ -1,7 +1,6 @@
 package com.ndrianja.mongotest.task;
 
 import com.ndrianja.mongotest.project.Project;
-import com.ndrianja.mongotest.user.User;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;

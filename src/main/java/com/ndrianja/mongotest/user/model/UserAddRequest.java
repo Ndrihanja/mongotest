@@ -1,6 +1,5 @@
-package com.ndrianja.mongotest.user;
+package com.ndrianja.mongotest.user.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,9 +9,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserAddResponse {
-    @JsonProperty("first_name")
+public class UserAddRequest {
+
     private String firstname;
-    @JsonProperty("last_name")
     private String lastname;
+    private String email;
+    private String password;
 }
