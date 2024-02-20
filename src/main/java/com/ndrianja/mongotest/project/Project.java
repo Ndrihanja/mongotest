@@ -1,6 +1,7 @@
 package com.ndrianja.mongotest.project;
 
 import com.ndrianja.mongotest.team.Team;
+import com.ndrianja.mongotest.user.model.User;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;

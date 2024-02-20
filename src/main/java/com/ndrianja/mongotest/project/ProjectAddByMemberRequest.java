@@ -1,5 +1,6 @@
 package com.ndrianja.mongotest.project;
 
+import com.ndrianja.mongotest.user.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
