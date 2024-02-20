@@ -1,7 +1,7 @@
 #spring:
 #  data:
 #    mongodb:
-#      uri: mongodb+srv://ndrihanja:Ndrihanja07@cluster0.cdrts5u.mongodb.net/
+#      uri: mongodb+srv://username:mdp@mongoClusterLink/
 #  jackson:
 #    serialization:
 #      WRITE_DATES_AS_TIMESTAMPS: false

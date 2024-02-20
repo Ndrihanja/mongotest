@@ -72,7 +72,14 @@ public class ProjectService {
         List<Project> listDTO = new ArrayList<>();
 
         for (Project p : list) {
-            listDTO.add(new Project(p.getId(), p.getName(), p.getDescription(), p.getStatus(), p.getCreatedByUsersId(), p.getCreatedByTeamId(), p.getCollaboratingTeams(), p.getCollaboratingMembers()));
+            listDTO.add(new Project(p.getId(),
+                                    p.getName(),
+                                    p.getDescription(),
+                                    p.getStatus(),
+                                    p.getCreatedByUsersId(),
+                                    p.getCreatedByTeamId(),
+                                    p.getCollaboratingTeams(),
+                                    p.getCollaboratingMembers()));
         }
 
         return list;
