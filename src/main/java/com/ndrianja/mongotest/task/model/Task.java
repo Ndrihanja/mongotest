@@ -1,6 +1,6 @@
-package com.ndrianja.mongotest.task;
+package com.ndrianja.mongotest.task.model;
 
-import com.ndrianja.mongotest.project.Project;
+import com.ndrianja.mongotest.project.model.Project;
 import com.ndrianja.mongotest.user.model.User;
 import lombok.Builder;
 import lombok.Data;

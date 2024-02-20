@@ -1,6 +1,7 @@
-package com.ndrianja.mongotest.project;
+package com.ndrianja.mongotest.project.model;
 
-import com.ndrianja.mongotest.team.Team;
+import com.ndrianja.mongotest.project.Status;
+import com.ndrianja.mongotest.team.model.Team;
 import com.ndrianja.mongotest.user.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

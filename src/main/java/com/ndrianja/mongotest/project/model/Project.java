@@ -1,9 +1,9 @@
-package com.ndrianja.mongotest.project;
+package com.ndrianja.mongotest.project.model;
 
-import com.ndrianja.mongotest.team.Team;
+import com.ndrianja.mongotest.project.Status;
+import com.ndrianja.mongotest.team.model.Team;
 import com.ndrianja.mongotest.user.model.User;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
@@ -13,6 +13,8 @@ import java.util.List;
 @Document(collection = "projects")
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Project {
     @Id
     private String id;

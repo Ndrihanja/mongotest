@@ -1,5 +1,10 @@
-package com.ndrianja.mongotest.project;
+package com.ndrianja.mongotest.project.controller;
 
+import com.ndrianja.mongotest.project.model.Project;
+import com.ndrianja.mongotest.project.model.ProjectAddByMemberRequest;
+import com.ndrianja.mongotest.project.model.ProjectAddByTeamRequest;
+import com.ndrianja.mongotest.project.model.ProjectAddResponse;
+import com.ndrianja.mongotest.project.service.ProjectService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

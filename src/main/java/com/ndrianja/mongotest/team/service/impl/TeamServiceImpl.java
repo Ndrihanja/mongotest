@@ -1,5 +1,10 @@
-package com.ndrianja.mongotest.team;
+package com.ndrianja.mongotest.team.service.impl;
 
+import com.ndrianja.mongotest.team.model.Team;
+import com.ndrianja.mongotest.team.model.TeamAddRequest;
+import com.ndrianja.mongotest.team.model.TeamAddResponse;
+import com.ndrianja.mongotest.team.repository.TeamRepository;
+import com.ndrianja.mongotest.team.service.TeamService;
 import com.ndrianja.mongotest.user.model.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -10,10 +15,10 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class TeamService {
-
+public class TeamServiceImpl implements TeamService {
     private final TeamRepository teamRepository;
 
+    @Override
     public TeamAddResponse createTeam(TeamAddRequest teamAddRequest) {
         List<User> team_members = teamAddRequest.getTeam_members().stream().toList();
         Team team_add = Team.builder()
@@ -27,6 +32,7 @@ public class TeamService {
                 .build();
     }
 
+    @Override
     public List<Team> findAll() {
         List<Team> list = teamRepository.findAll();
         List<Team> listDTO = new ArrayList<>();
@@ -37,6 +43,8 @@ public class TeamService {
 
         return listDTO;
     }
+
+    @Override
     public Optional<Team> findTeamById(String teamId) {
         return teamRepository.findById(teamId);
     }

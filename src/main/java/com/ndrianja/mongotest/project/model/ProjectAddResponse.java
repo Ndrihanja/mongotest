@@ -1,6 +1,7 @@
-package com.ndrianja.mongotest.project;
+package com.ndrianja.mongotest.project.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.ndrianja.mongotest.project.Status;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.ndrianja.mongotest.project;
+package com.ndrianja.mongotest.project.model;
 
 import com.ndrianja.mongotest.user.model.User;
 import lombok.AllArgsConstructor;
