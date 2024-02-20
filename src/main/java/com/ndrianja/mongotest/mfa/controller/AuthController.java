@@ -8,6 +8,7 @@ import com.ndrianja.mongotest.mfa.service.JWTService;
 import com.ndrianja.mongotest.user.model.User;
 import com.ndrianja.mongotest.user.service.UserService;
 import dev.samstevens.totp.exceptions.QrGenerationException;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -21,6 +22,8 @@ import java.text.ParseException;
 
 @CrossOrigin
 @RestController
+@RequestMapping("/api/v1/auth")
+@Tag(name = "Authentication", description = "Endpoints for authentication management")
 @RequiredArgsConstructor
 public class AuthController {
     private final UserService userService;
