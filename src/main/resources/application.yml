@@ -21,5 +21,18 @@ spring:
       port: 27017
       database: test
 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ndrihanjarajaonarivony@gmail.com
+    password: yourpassword
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            required: true
+            enable: true
+
 #app.ui.host.cors.uri_1=http://localhost:4200
 #app.ui.host.cors.uri_2=http://localhost:4201
